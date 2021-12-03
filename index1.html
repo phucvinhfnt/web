@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <h1>The input placeholder attribute</h1>
+
+
+  <label for="phone1">Enter a phone number:</label><br><br>
+  <input type="tel" id="phone" placeholder="xinchao"><br><br>
+
+  <button onclick="show()">Click Me</button>
+  <!-- <script>
+//       const url = './jason.json'
+//   const gettodo = async (url) => {
+//     return await fetch(url);
+//   }
+//   const todo = await gettodo(url);
+//   const { title } = await todo.json();
+//   var users = (`${title}`);
+
+       document.getElementById('phone').value=users;
+  </script> -->
+  <!-- <script>
+      // async function loadNames() {
+      //   const response = await fetch('./jason.json');
+      //   const names = await response.json();
+      //   const map = new Map(Object.entries(names));
+      //   let users = map.get("name");
+      //   document.getElementById('phone').value = users;
+      // }
+      // loadNames();
+      
+
+      // data to be sent to the POST request
+      let _data = {
+        "name": "aaa",
+        "city": "Gotham",
+        "isVillain": true,
+        "friends": []
+        
+      }
+
+      fetch('./jason.json', {
+        method: "POST",
+        body: JSON.stringify(_data),
+        headers: { "Content-type": "application/json; charset=UTF-8" }
+      })
+        .then(response => response.json())
+        .then(json => console.log(json));
+       
+
+    </script> -->
+
+    
+  <!-- <script>
+    postapiiiiiiiiiii
+    function createCouse(data, callback) {
+      var options = {
+        method: 'PUT',
+        headers: {
+      'Content-Type': 'application/json'
+      
+    },
+        body: JSON.stringify(data)
+
+      };
+      fetch('http://localhost:3000/course', options)
+        .then(function (response) {
+          response.json();
+        })
+        .then(callback);
+    }
+  </script>
+  <script>
+    function show() {
+      var hienthi = document.querySelector('phone');
+
+      var formData = {
+        id='1',
+        name:'hello1',
+        city:'hello'
+      };
+      createCouse(formData)
+    }
+  </script> -->
+<script>
+  localStorage.setItem('name','vinh');
+
+  function show() {
+      var hienthi = document.querySelector('phone');
+      
+    }
+</script>
+
+</body>
+
+</html>
